@@ -54,7 +54,7 @@ public class FlutterPluginQrcodePlugin implements MethodCallHandler, PluginRegis
 
   @Override
   public boolean onActivityResult(int i, int i1, Intent intent) {
-        // 获取解析结果
+        // 获取解析结果  // 49374
     IntentResult result = IntentIntegrator.parseActivityResult(i, i1, intent);
     if (result != null) {
       if (result.getContents() == null) {
@@ -64,7 +64,7 @@ public class FlutterPluginQrcodePlugin implements MethodCallHandler, PluginRegis
       }
       return true;
     } else {
-      this.result.error("扫描失败",null,null);
+      //this.result.error("扫描失败",null,null);
       return false;
     }
   }
