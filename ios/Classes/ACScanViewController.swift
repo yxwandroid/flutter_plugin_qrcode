@@ -245,7 +245,10 @@ extension ACScanViewController : AVCaptureMetadataOutputObjectsDelegate
             stopRunning()
 
             qrCodeBlock!(qrcodeResult)
-            self.dismiss(animated: true, completion: nil)
+            //self.dismiss(animated: true, completion: nil)
+            DispatchQueue.main.async {
+              self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 }
