@@ -5,7 +5,7 @@
         flutter_plugin_qrcode: ^1.0.1
 
      
-##导入头文件
+## 导入头文件
         
             import 'package:flutter_plugin_qrcode/flutter_plugin_qrcode.dart';
      
