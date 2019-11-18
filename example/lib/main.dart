@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _qrcode = 'Unknown';
+  String _qrcode = '二维码扫描';
 
   @override
   void initState() {
@@ -22,18 +22,13 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> getQrcodeState() async {
     String qrcode;
-    // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       qrcode = await FlutterPluginQrcode.getQRCode;
     } on PlatformException {
       qrcode = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
     if (!mounted) return;
-
     setState(() {
       _qrcode = qrcode;
     });
@@ -44,7 +39,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Flutter QRCode Plugin example app'),
         ),
         body: Center(
 
@@ -52,8 +47,7 @@ class _MyAppState extends State<MyApp> {
             getQrcodeState();
 
           },
-
-              child: Text('点击  $_qrcode')),
+              child: Text('$_qrcode')),
         ),
       ),
     );

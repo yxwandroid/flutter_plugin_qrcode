@@ -1,7 +1,7 @@
 name: flutter_plugin_qrcode
-description: QRCode  Plugin
-version: 0.0.1
-author:  wilson<yxw_android@163.com>
+description: flutter 二维码扫描插件
+version: 1.0.1
+author:  wilson <yxw_android@163.com>
 homepage: https://github.com/yxwandroid/flutter_plugin_qrcode
 
 environment:
