@@ -1,8 +1,13 @@
  
 ## 引入方式
  
+      dependencies:
+        flutter_plugin_qrcode: ^1.0.1
+
      
-     import 'package:flutter_plugin_qrcode/flutter_plugin_qrcode.dart';
+##导入头文件
+        
+            import 'package:flutter_plugin_qrcode/flutter_plugin_qrcode.dart';
      
 ## 使用 
 
@@ -23,5 +28,3 @@
       }
 
  
- 
-##  关注公众号获取更多内容
