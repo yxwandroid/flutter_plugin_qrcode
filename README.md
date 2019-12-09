@@ -11,11 +11,11 @@
 
 android 
 
-<img src=".README_images/android.gif" width="400"  align=center />
+<img src="README_images/android.gif" width="400"  align=center />
 
 IOS 
  
-<img src=".README_images/ios.gif" width="400"  align=center />
+<img src="README_images/ios.gif" width="400"  align=center />
 
  
 ## 引入方式
@@ -52,5 +52,5 @@ IOS
 
 
 
-<img src=".README_images/a1d43655.png" width="200" hegiht="313" align=center />
+<img src="README_images/a1d43655.png" width="200" hegiht="313" align=center />
 
