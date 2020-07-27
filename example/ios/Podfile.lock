@@ -4,12 +4,12 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios`)
+  - Flutter (from `Flutter`)
   - flutter_plugin_qrcode (from `.symlinks/plugins/flutter_plugin_qrcode/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: ".symlinks/flutter/ios"
+    :path: Flutter
   flutter_plugin_qrcode:
     :path: ".symlinks/plugins/flutter_plugin_qrcode/ios"
 
@@ -17,6 +17,6 @@ SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_plugin_qrcode: 84b540901693d41dd5ff75a692391b58bc082895
 
-PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
 
-COCOAPODS: 1.9.0.beta.3
+COCOAPODS: 1.9.1
