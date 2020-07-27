@@ -20,6 +20,8 @@ IOS
  
 ## 引入方式
  
+ 
+ 
       dependencies:
         flutter_plugin_qrcode: ^1.0.1
 
@@ -46,6 +48,21 @@ IOS
         });
       }
 
+ 
+##  注意事项 
+    
+####1,记得在AndroidManifest.xml 添加访问相机的权限 动态申请权限
+    
+        <uses-permission android:name="android.permission.CAMERA" />
+        
+#### 2,记得在IOS项目info.plist 文件添加相机的权限
+
+        <!-- 相机 -->   
+        <key>NSCameraUsageDescription</key>   
+        <string>App需要您的同意,才能访问相机</string>   
+
+
+     
  
  
 ##  关注公众号获取更多内容
